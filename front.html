@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Template - nightmode</title>
+  <link rel="stylesheet" href="browser_style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <script>
+    // Reset time when switching between cards //
+    reset();
+
+    function reset() {
+      minute = 0;
+      second = 0;
+      millisecond = 0;
+      document.getElementById('minute').innerText = '00';
+      document.getElementById('second').innerText = '00';
+    }
+  </script>
+</head>
+
+<body>
+  <div class="card-container">
+    <!-- Topbar containing the showtip and the chronometer -->
+
+    <div class="topbar">
+      <div id="chrono" class="stopwatch" onclick="pause()">
+        <span class="material-symbols-outlined" style="font-size: 32px;">timer</span>
+        <span id="minute" class="timer"></span>
+        <span class="timer">:</span>
+        <span id="second" class="timer"></span>
+      </div>
+      <div id="showtip" class="showtip" onclick="showhide()">
+        <span class="material-symbols-outlined" style="font-size: 32px;">
+          lightbulb
+        </span>
+      </div>
+    </div>
+
+    <!-- Tag container -->
+
+    <div class="tag-container"></div>
+
+    <!-- Cards -->
+
+    <div class="front-card">{{Front}}</div>
+    <div id="tip-card" class="common-card">{{Tip}}</div>
+
+  </div>
+  <!-- Element used to get the string of tags -->
+
+  <span hidden id="tagcontent">{{Tags}}</span>
+
+  <!-- Scripts -->
+  <script>
+    // Show/Hide Tip on click //
+    showhide();
+
+    var a = 1;
+
+    function showhide() {
+      if (a == 1) {
+        document.getElementById("tip-card").style.display = "block";
+        return a = 0;
+      }
+      else {
+        document.getElementById("tip-card").style.display = "none";
+        return a = 1;
+      }
+    };
+
+    // Stopwatch //
+    let minute = 0;
+    let second = 0;
+    let millisecond = 0;
+    let cron;
+
+    // Start it //
+    iniate();
+
+    function iniate() {
+      cron = setInterval(() => { timer(); }, 10);
+    }
+
+    // Pause on click //
+    function pause() {
+      clearInterval(cron);
+      document.getElementById("chrono").setAttribute("onClick", "start();");
+    };
+
+    // Start on click //
+    function start() {
+      pause();
+      cron = setInterval(() => { timer(); }, 10);
+      document.getElementById("chrono").setAttribute("onClick", "pause();");
+    };
+
+    // Timer //
+    function timer() {
+      if ((millisecond += 10) == 1000) {
+        millisecond = 0;
+        second++;
+      }
+      if (second == 60) {
+        second = 0;
+        minute++;
+      }
+      document.getElementById('minute').innerText = returnData(minute);
+      document.getElementById('second').innerText = returnData(second);
+    };
+
+    function returnData(input) {
+      return input >= 10 ? input : `0${input}`
+    }
+  </script>
+  <script>
+    // Get the string of tags, turn it into an array, remove :: and  get last tag in the hierarchy //
+    var importTags = document.getElementById('tagcontent').innerHTML;
+    var currentTags = importTags.split(' ').map(function (tags) {
+      return tags.split('::').pop();
+    });
+
+    // Replace underscores with space //
+    var arrayVariable = currentTags;
+
+    for (var i = 0; i < arrayVariable.length; i++) {
+      arrayVariable[i] = arrayVariable[i].replace(/_/g, ' ');
+    };
+
+    // Get the array of tags, create an element for each tag and add it into tag-container //
+    var arrayLength = arrayVariable.length;
+    var temp;
+
+    for (i = 0; i < arrayLength; i++) {
+      temp = document.createElement('div');
+      temp.className = 'tags';
+      temp.innerHTML = arrayVariable[i];
+      document.getElementsByClassName('tag-container')[0].appendChild(temp);
+    };
+  </script>
+</body>
+
+</html>
