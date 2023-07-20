@@ -3,6 +3,8 @@ A collection of my anki card templates, feel free to use it 😊
 ### Note about mobile 📱
  I haven't tested this template on the mobile app, so I don't know if it works well there.
  If someone tests it, please let me know here if works.
+### Note about timer ⏱️
+The timer button is not synchronized with Anki's timer, so pausing it will not pause Anki's timer.
 # Fields
 There are six fields: front, back, extra, tip, and source.
 Empty fields won't be displayed, so there is no need to fill them all.
@@ -16,8 +18,6 @@ Below these two icons, there is a tag field that shows the card's tags as follow
 Thus, the tag "ENEM/UECE::Humanas::História::Brasil::Brasil_império," for example, will be displayed as "Brasil Império".
 
 Just below, there are the following self-explanatory fields: Front, Back, Extra, and Tip.
-### Note about timer ⏱️
-The timer button is not synchronized with Anki's timer, so pausing it will not pause Anki's timer.
 # Front card on Desktop app:
 ![Captura de tela 2023-07-20 152349](https://github.com/SweetMeh/Anki-Card-Templates/assets/115176622/f1170ade-59d8-48b9-bb8d-53f1ef1e33e7)
 # Back card on Desktop app:
