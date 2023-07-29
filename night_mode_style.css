@@ -225,6 +225,68 @@ td {
  color: #1b1b1d;
 }
 
+#defease,
+button[onclick*="ans"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 16px;
+  margin: 8px;
+  height: 40px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #357bfe;
+  color: #fafdfd;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: transform 0.5s ease-out !important;
+}
+
+#defease:hover,
+button[onclick*="ans"]:hover {
+  transform: scale(1.1);
+  background-color: #fafdfd;
+  color: #357bfe;
+}
+
+button[onclick*="edit"],
+button[onclick*="more"],
+button[onclick*="ease1"]:not(#defease),
+button[onclick*="ease2"]:not(#defease),
+button[onclick*="ease3"]:not(#defease),
+button[onclick*="ease4"]:not(#defease) {
+  padding: 7.5px 16px;
+  margin: 8px;
+  height: 40px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #272729;
+  color: #fafdfd;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: transform 0.5s ease-out !important;
+}
+
+.fancy button:hover,
+button[onclick*="edit"]:hover,
+button[onclick*="more"]:hover,
+button[onclick*="ease1"]:not(#defease):hover,
+button[onclick*="ease2"]:not(#defease):hover,
+button[onclick*="ease3"]:not(#defease):hover,
+button[onclick*="ease4"]:not(#defease):hover {
+  transform: scale(1.1);
+  background: #fafdfd !important;
+  color: #1b1b1d !important;
+}
+
 /* BROWSER CARD 1ST CONTAINER */
 #qa_box {
  flex-wrap: wrap;
