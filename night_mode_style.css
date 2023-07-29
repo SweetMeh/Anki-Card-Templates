@@ -172,16 +172,6 @@ td {
  color: #d7dadc;
 }
 
-/* ANSWER BUTTONS CONTAINER */
-#outer {
-  background-color: #121212;
-}
-
-table#innertable {
-  margin-top: 24px;
-  background-color: #121212;
-}
-
 /* AGAIN, HARD, GOOD, EASY BUTTONS */
 .btn-primary {
  display: flex;
