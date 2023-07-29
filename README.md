@@ -24,12 +24,12 @@ Just below, there are the following self-explanatory fields: Front, Back, Extra,
 ![Captura de tela 2023-07-20 152409](https://github.com/SweetMeh/Anki-Card-Templates/assets/115176622/3203c2e7-f784-463d-a644-6dc5d1d357e3)
 
 # Front card - night version - on mobile browser 📱
-<img src="https://github.com/SweetMeh/Anki-Card-Templates/assets/115176622/60086224-371f-4c9c-93ea-96b813423227" width=25% height=25%>
-<img src="https://github.com/SweetMeh/Anki-Card-Templates/assets/115176622/b010aa5b-2146-49f3-ba54-18709b0d63f4" width=25% height=25%>
+<img src="images/IMG_1908.jpg" width=25% height=25%>
+<img src="images/IMG_1911.PNG" width=25% height=25%>
 
 # Back card - night version - on mobile browser 📱
-<img src="https://github.com/SweetMeh/Anki-Card-Templates/assets/115176622/e827529a-3fd7-4195-a8e7-15ab541a94a1" width=25% height=25%>
-<img src="https://github.com/SweetMeh/Anki-Card-Templates/assets/115176622/6ea43ff0-4b25-43a2-8d9b-f3b965fac44a" width=25% height=25%>
+<img src="images/IMG_1909.jpg" width=25% height=25%>
+<img src="images/IMG_1910.jpg" width=25% height=25%>
 
 # Credits 
 This template uses Material Design icons by Google and Poppins font by Indian Type Foundry and Jonny Pinhorn
