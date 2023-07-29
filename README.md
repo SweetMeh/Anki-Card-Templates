@@ -1,5 +1,5 @@
 # Anki-Card-Templates 📚
-A collection of my anki card templates, feel free to use it 😊
+I originally posted this template on Reddit using Pastebin, but I decided to delete it there and move it here to help people find it more easily.
 
 ### Note about bottom bar buttons (Show Answer, Again, Hard, Good, Easy, More) - on Desktop App 💻
 This template won't change the appearence of said buttons on Desktop App, only on mobile browser and desktop browser.
