@@ -1,6 +1,9 @@
 # Anki-Card-Templates 📚
 A collection of my anki card templates, feel free to use it 😊
 
+### Note about bottom bar buttons (Show Answer, Again, Hard, Good, Easy, More) on Desktop App 💻
+To edit them on the app I use Beautify addon.
+
 ### Note about mobile 📱
  I haven't tested this template on the mobile app, so I don't know if it works well there.
  If someone tests it, please let me know here if works.
