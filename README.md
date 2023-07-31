@@ -3,11 +3,11 @@ I originally posted this template on Reddit using Pastebin, but I decided to del
 
 ### Note about bottom bar buttons (Show Answer, Again, Hard, Good, Easy, More) - on Desktop App 💻
 This template won't change the appearence of said buttons on Desktop App, only on mobile browser and desktop browser.
-In order to change in them in the Desktop App, I used Beautify add-on.
+In order to change them in the Desktop App, I used Beautify add-on.
 
 ### Note about mobile 📱
- I haven't tested this template on the mobile app, so I don't know if it works well there.
- If someone tests it, please let me know here if works.
+ It seems to be working on the ios app.
+ If someone tests it on android, please let me know if works.
  
 ### Note about timer ⏱️
 The timer button is not synchronized with Anki's timer, so pausing it will not pause Anki's timer.
