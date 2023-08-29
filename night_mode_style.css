@@ -27,11 +27,16 @@ img {
  margin: 16px auto;
  max-height: 100%;
  max-width: 100%;
- border-radius: 2%;
+ border-radius: 16px;
  background-color: inherit;
 }
 
 /* BROWSER NAV BAR */
+
+.bg-gray.svelte-uhvvkf.svelte-uhvvkf {
+ background-color: #121212;
+}
+
 .align-middle {
  color: #d7dadc;
 }
@@ -57,7 +62,9 @@ img {
 
 .navbar .container {
  display: flex;
+ flex-direction: row;
  justify-content: center;
+ flex-wrap: nowrap;
  height: auto;
  width: auto;
  background-color: inherit;
@@ -65,12 +72,11 @@ img {
 
 .navbar-toggler {
  margin: 16px 0 16px 0;
- color: #d7dadc !important;
  background-color: #d7dadc;
 }
 
 .navbar-toggler-icon {
- color: #d7dadc !important;
+ background-color: #d7dadc;
 }
 
 .navbar-collapse {
@@ -119,29 +125,26 @@ img {
 }
 
 /* RIGHT STUDY MENU */
-#rightStudyMenu {
- display: none;
-}
-
-/* LEFT STUDY MENU */
-#leftStudyMenu {
+/* Previously #rightStudyMenu */
+.float-end {
  display: flex;
  flex-flow: row wrap;
- justify-content: center;
+ justify-content: flex-start;
  align-items: center;
- margin: 0 auto;
+ margin: 0;
  height: 100%;
- width: 100%;
+ width: 50%;
  background-color: inherit;
 }
 
-#leftStudyMenu .btn-secondary {
+.float-end .count {
  display: flex;
  justify-content: center;
  align-items: center;
  padding: 7.5px 14px;
  margin: 8px;
  height: 28px;
+ border: none;
  border-radius: 16px;
  background-color: #272729;
  color: #d7dadc;
@@ -154,14 +157,56 @@ img {
  transition: transform 0.5s ease-out;
 }
 
-#leftStudyMenu .btn-secondary:hover {
+.float-end .count:hover {
+ transform: scale(1.1);
+ background-color: #fafdfd;
+ color: #1b1b1d;
+}
+
+/* LEFT STUDY MENU */
+/* Previously #leftStudyMenu */
+.float-start {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-end;
+ align-items: center;
+ margin: 0;
+ height: 100%;
+ width: 50%;
+ background-color: inherit;
+}
+
+
+/*Previously #leftStudyMenu .btn-secondary */
+.float-start .btn-outline-primary {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 7.5px 14px;
+ margin: 8px;
+ height: 28px;
+ border: none;
+ border-radius: 16px;
+ background-color: #272729;
+ color: #d7dadc;
+ cursor: pointer;
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 13px;
+ text-transform: uppercase;
+ transition: transform 0.5s ease-out;
+}
+
+.float-start .btn-outline-primary:hover {
  transform: scale(1.1);
  background-color: #fafdfd;
  color: #1b1b1d;
 }
 
 /* BROWSER BOTTOM BAR */
-#ansarea {
+#ansarea,
+#ansarea.svelte-1s4vml8 {
  margin: 0 8px 0 8px;
  border-top: 1px solid #d7dadc;
  background-color: inherit;
@@ -170,6 +215,11 @@ img {
 td {
  padding: 8px;
  color: #d7dadc;
+}
+
+/* TEXT ABOVE AGAIN, HARD, GOOD, EASY BUTTONS*/
+.text-center {
+ color: #fafdfd;
 }
 
 /* AGAIN, HARD, GOOD, EASY BUTTONS */
@@ -182,7 +232,7 @@ td {
  height: 40px;
  border: 0;
  border-radius: 16px;
- background-color: #357bfe;
+ background-color: #19b8f2;
  color: #fafdfd;
  cursor: pointer;
  font-family: 'Poppins';
@@ -216,7 +266,7 @@ td {
 .btn-primary:hover {
  transform: scale(1.1);
  background-color: #fafdfd;
- color: #357bfe;
+ color: #19b8f2;
 }
 
 .btn-secondary:hover {
@@ -254,6 +304,10 @@ td {
   background-color: #1b1b1d !important;
  }
 
+ .bg-gray.svelte-uhvvkf.svelte-uhvvkf {
+  background-color: #1b1b1d;
+ }
+
  .navbar {
   border-bottom: 1px solid #d7dadc;
   background-color: #1b1b1d;
@@ -268,17 +322,6 @@ td {
   background-color: inherit;
  }
 
- #leftStudyMenu {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  background-color: inherit;
- }
-
  #qa_box {
   flex-wrap: wrap;
   align-content: center;
@@ -287,6 +330,16 @@ td {
  }
 
  #qa {
+  margin: 0 auto;
+ }
+
+ .float-end {
+  display: none;
+ }
+
+ .float-start {
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
  }
 
@@ -320,7 +373,7 @@ td {
  display: flex;
  flex-flow: column wrap;
  row-gap: 16px;
- width: 80vw;
+ width: 80%;
  padding: 16px;
  margin: 64px auto;
  border-radius: 8px;
@@ -422,7 +475,7 @@ td {
  margin: 8px;
  height: 28px;
  border-radius: 16px;
- background-color: #357bfe;
+ background-color: #19b8f2;
  color: #fafdfd;
  cursor: default;
  font-family: 'Poppins';
@@ -436,7 +489,7 @@ td {
 .tags:hover {
  transform: scale(1.1);
  background-color: #fafdfd;
- color: #357bfe;
+ color: #19b8f2;
 }
 
 .tags:empty {
