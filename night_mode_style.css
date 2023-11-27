@@ -308,83 +308,6 @@ td {
  background-color: #121212;
 }
 
-/* MOBILE VERSION */
-@media (max-width: 992px) {
-
- * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
- }
-
- html {
-  background-color: #1b1b1d !important;
- }
-
- .bg-gray.svelte-uhvvkf.svelte-uhvvkf {
-  background-color: #1b1b1d;
- }
-
- .navbar {
-  background-color: #1b1b1d;
- }
-
- .navbar .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  background-color: inherit;
- }
-
- #qa,
- #qa.svelte-1s4vml8,
- #qa.svelte-192a69y {
-  background-color: #1b1b1d;
- }
-
- #qa_box {
-  flex-wrap: wrap;
-  align-content: center;
-  margin: 0 auto;
-  background-color: #1b1b1d;
- }
-
- .float-end {
-  display: none;
- }
-
- .float-start {
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
- }
-
- .tag-container {
-  column-gap: 0 !important;
-  row-gap: 0 !important;
- }
-
- #qa .card-container {
-  display: flex;
-  flex-flow: column wrap;
-  column-gap: 16px;
-  row-gap: 16px;
-  padding: 0;
-  width: 90%;
-  margin: 0 auto;
-  background-color: #1b1b1d;
- }
-
- #ansarea,
- #ansarea.svelte-1s4vml8,
- #ansarea.svelte-192a69y {
-  background-color: #1b1b1b;
- }
-
-}
-
 /* CONTAINER TO ALIGN ALL CARD ELEMENTS */
 .card-container {
  display: flex;
@@ -587,4 +510,81 @@ ol {
  font-family: 'Material Symbols Outlined';
  font-size: 32px;
  background: none;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 992px) {
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+ html {
+  background-color: #1b1b1d !important;
+ }
+
+ .bg-gray.svelte-uhvvkf.svelte-uhvvkf {
+  background-color: #1b1b1d;
+ }
+
+ .navbar {
+  background-color: #1b1b1d;
+ }
+
+ .navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+ }
+
+ #qa,
+ #qa.svelte-1s4vml8,
+ #qa.svelte-192a69y {
+  background-color: #1b1b1d;
+ }
+
+ #qa_box {
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  background-color: #1b1b1d;
+ }
+
+ .float-end {
+  display: none;
+ }
+
+ .float-start {
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+ }
+
+ .tag-container {
+  column-gap: 0;
+  row-gap: 0;
+ }
+
+ #qa .card-container {
+  display: flex;
+  flex-flow: column wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #1b1b1d;
+ }
+
+ #ansarea,
+ #ansarea.svelte-1s4vml8,
+ #ansarea.svelte-192a69y {
+  background-color: #1b1b1b;
+ }
+
 }
