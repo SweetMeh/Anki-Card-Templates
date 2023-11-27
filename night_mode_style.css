@@ -298,9 +298,10 @@ td {
  background-color: #121212;
 }
 
-/* BROWSER CARD 2ND CONTAINER */
+/* BROWSER CARD 2ND CONTAINER, previosly #qa.svelte-1s4vml8,  its #qa.svelte-192a69y */
 #qa,
-#qa.svelte-1s4vml8 {
+#qa.svelte-1s4vml8,
+#qa.svelte-192a69y {
  margin: 0 auto;
  height: 100%;
  width: 100%;
@@ -338,7 +339,8 @@ td {
  }
 
  #qa,
- #qa.svelte-1s4vml8 {
+ #qa.svelte-1s4vml8,
+ #qa.svelte-192a69y {
   background-color: #1b1b1d;
  }
 
@@ -357,6 +359,11 @@ td {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+ }
+
+ .tag-container {
+  column-gap: 0 !important;
+  row-gap: 0 !important;
  }
 
  #qa .card-container {
