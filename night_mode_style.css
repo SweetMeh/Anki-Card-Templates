@@ -217,9 +217,10 @@ img {
  color: #1b1b1d;
 }
 
-/* BROWSER BOTTOM BAR */
+/* BROWSER BOTTOM BAR, previously #ansarea.svelte-1s4vml8, now its #ansarea.svelte-192a69y  */
 #ansarea,
-#ansarea.svelte-1s4vml8 {
+#ansarea.svelte-1s4vml8,
+#ansarea.svelte-192a69y {
  margin: 0px;
  border-top: 2px solid #d7dadc;
  background-color: #121212;
@@ -370,7 +371,8 @@ td {
  }
 
  #ansarea,
- #ansarea.svelte-1s4vml8 {
+ #ansarea.svelte-1s4vml8,
+ #ansarea.svelte-192a69y {
   background-color: #1b1b1b;
  }
 
